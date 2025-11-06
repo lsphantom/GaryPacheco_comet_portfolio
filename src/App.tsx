@@ -9,22 +9,23 @@ const projectSections = [
       'Mission-driven training and science communication products across weather, climate, aviation, and emergency response.',
     items: [
       {
-        title: 'PSIF Climate Risk Portal',
+        title: 'Climate Risk Portal',
         timeline: '2025',
-        focus: 'UI/UX · Product Consulting',
+        focus: 'UI/UX Design · Web Application',
         description:
-          'UI/UX project team contributor and consultant supporting philanthropic climate risk analytics.',
+          'UI/UX designer and project consultant.',
         highlights: [
           'Guided storytelling and interface decisions that translate complex climate risk insights.',
+          'Generated wireframes, prototypes, and design assets to align cross-functional teams.',
           'Collaborated with multidisciplinary stakeholders to ground the portal in accessibility best practices.',
         ],
         tools: ['Figma', 'Design Strategy', 'Accessibility'],
       },
       {
-        title: 'COMET Web Platform Stewardship',
+        title: 'The COMET Program',
         timeline: '2020 – 2025',
-        focus: 'Web Master · Platform Steward',
-        description: 'Stewardship of the COMET Drupal platform for a global training audience.',
+        focus: 'Drupal | Pantheon · Website',
+        description: 'Webmaster to the Drupal-based website www.comet.ucar.edu.',
         highlights: [
           'Drupal: managed pages, content, roles, and new dev integrations.',
           'Pantheon: applied upstream updates, multidev releases, and production deployments.',
@@ -33,7 +34,7 @@ const projectSections = [
         url: 'https://www.comet.ucar.edu',
       },
       {
-        title: 'COMET MetEd Lesson Static Shell',
+        title: 'MetEd Lesson Static HTML Builder',
         timeline: '2025',
         focus: 'Svelte · Frontend Engineering',
         description:
@@ -45,22 +46,22 @@ const projectSections = [
         tools: ['Svelte', 'Storyline', 'Frontend Engineering'],
       },
       {
-        title: '3D-PAWS Knowledge Ecosystem',
+        title: '3D-PAWS Documentation Ecosystem',
         timeline: '2024 – 2025',
         focus: 'GitBook · Community Platform',
         description:
           'Documentation and discussions for 3D-PAWS instrumentation teams across GitBook and Discourse.',
         highlights: [
-          'GitBook: led creation, integration, role management, and content development.',
+          'GitBook: led creation, integration, role management, and content development for the 3D-PAWS manual.',
           'Discourse: launched discussion hub, content development, and onboarding for instrumentation communities.',
         ],
         tools: ['GitBook', 'Discourse', 'Community Management'],
         url: 'https://3dpaws.comet.ucar.edu/',
       },
       {
-        title: 'COMET Lesson Prototype Viewer',
+        title: 'MetEd Lesson Dynamic Prototype Viewer',
         timeline: '2022 – 2025',
-        focus: 'React · Redux',
+        focus: 'React · Fullstack Development',
         description: 'Prototype viewer enabling next-generation COMET lesson experiences.',
         highlights: [
           'React JS, Redux: creation, frontend development, and backend development.',
@@ -70,9 +71,9 @@ const projectSections = [
         url: 'https://deved.meted.ucar.edu/prototype_viewer/',
       },
       {
-        title: 'COMET MetEd Education & Training',
+        title: 'COMET\'s Education & Training Platform',
         timeline: '2021 – 2025',
-        focus: 'React · Tailwind',
+        focus: 'React · Fullstack Development',
         description: 'Modern education and training experience for MetEd audiences.',
         highlights: [
           'React JS, Redux, Tailwind: creation plus frontend and backend development.',
@@ -83,7 +84,7 @@ const projectSections = [
       },
     ],
   },
-  {
+  /*{
     id: 'lime-stripes',
     title: 'Lime Stripes Creative Studio | Business Development',
     period: 'Ongoing',
@@ -157,7 +158,7 @@ const projectSections = [
         tools: ['Adobe Illustrator', 'Print Design', 'Brand Systems'],
       },
     ],
-  },
+  },*/
 ] as const
 
 const skillMatrix = {
@@ -322,66 +323,6 @@ function App() {
           </aside>
 
           <main className="space-y-16">
-            {projectSections.map((section) => (
-              <section key={section.id} className="space-y-6">
-                <header className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                      {section.period}
-                    </p>
-                    <h2 className="text-2xl font-semibold text-ink-900">{section.title}</h2>
-                  </div>
-                  <p className="text-sm text-slate-500 sm:max-w-sm">{section.summary}</p>
-                </header>
-
-                <div className="grid gap-6 md:grid-cols-2">
-                  {section.items.map((item) => (
-                    <article
-                      key={item.title}
-                      className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg"
-                    >
-                      <div className="flex items-center justify-between text-xs font-medium text-slate-500">
-                        <span>{item.focus}</span>
-                        <span>{item.timeline}</span>
-                      </div>
-                      <h3 className="mt-4 text-xl font-semibold text-ink-900">
-                        {item.url ? (
-                          <a
-                            href={item.url}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-ink-900 underline-offset-4 transition-colors hover:text-ink-700"
-                          >
-                            {item.title}
-                          </a>
-                        ) : (
-                          item.title
-                        )}
-                      </h3>
-                      <p className="mt-3 text-sm text-slate-600">{item.description}</p>
-                      <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                        {item.highlights.map((highlight) => (
-                          <li key={highlight} className="flex gap-3">
-                            <span className="mt-2 h-2 w-2 flex-none rounded-full bg-slate-400" aria-hidden="true" />
-                            <span>{highlight}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <div className="mt-5 flex flex-wrap gap-2">
-                        {item.tools.map((tool) => (
-                          <span
-                            key={tool}
-                            className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-600"
-                          >
-                            {tool}
-                          </span>
-                        ))}
-                      </div>
-                    </article>
-                  ))}
-                </div>
-              </section>
-            ))}
 
             <section className="rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-soft backdrop-blur">
               <header className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
@@ -448,6 +389,71 @@ function App() {
                 ))}
               </div>
             </section>
+
+
+
+            {projectSections.map((section) => (
+              <section key={section.id} className="space-y-6">
+                <header className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                      {section.period}
+                    </p>
+                    <h2 className="text-2xl font-semibold text-ink-900">{section.title}</h2>
+                  </div>
+                  <p className="text-sm text-slate-500 sm:max-w-sm">{section.summary}</p>
+                </header>
+
+                <div className="grid gap-6 md:grid-cols-2">
+                  {section.items.map((item) => (
+                    <article
+                      key={item.title}
+                      className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg"
+                    >
+                      <div className="flex items-center justify-between text-xs font-medium text-slate-500">
+                        <span>{item.focus}</span>
+                        <span>{item.timeline}</span>
+                      </div>
+                      <h3 className="mt-4 text-xl font-semibold text-ink-900">
+                        {item.url ? (
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-ink-900 underline-offset-4 transition-colors hover:text-ink-700"
+                          >
+                            {item.title}
+                          </a>
+                        ) : (
+                          item.title
+                        )}
+                      </h3>
+                      <p className="mt-3 text-sm text-slate-600">{item.description}</p>
+                      <ul className="mt-4 space-y-2 text-sm text-slate-600">
+                        {item.highlights.map((highlight) => (
+                          <li key={highlight} className="flex gap-3">
+                            <span className="mt-2 h-2 w-2 flex-none rounded-full bg-slate-400" aria-hidden="true" />
+                            <span>{highlight}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="mt-5 flex flex-wrap gap-2">
+                        {item.tools.map((tool) => (
+                          <span
+                            key={tool}
+                            className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-600"
+                          >
+                            {tool}
+                          </span>
+                        ))}
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            ))}
+
+            
 
             <section className="rounded-3xl border border-dashed border-slate-300 bg-white/70 p-8 text-sm text-slate-500">
               <p className="font-medium text-slate-600">What’s next</p>
