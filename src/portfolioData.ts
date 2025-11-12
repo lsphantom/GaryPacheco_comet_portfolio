@@ -20,7 +20,7 @@ export const projectSections: readonly ProjectSection[] = [
   {
     id: 'ucar-comet',
     title: 'University Corporation for Atmospheric Research (UCAR)',
-    period: '2014 – 2025',
+    period: '2014 – Present',
     summary: '',
     items: [
       {
@@ -49,7 +49,7 @@ export const projectSections: readonly ProjectSection[] = [
         url: 'https://www.comet.ucar.edu',
       },
       {
-        title: 'MetEd Lesson Static HTML Builder',
+        title: 'MetEd Internal Tool: Static HTML Lesson Builder',
         timeline: '2025',
         focus: 'Svelte · Frontend Engineering',
         description:
@@ -74,10 +74,10 @@ export const projectSections: readonly ProjectSection[] = [
         url: 'https://3dpaws.comet.ucar.edu/',
       },
       {
-        title: 'MetEd Lesson Dynamic Prototype Viewer',
+        title: 'MetEd Internal Tool: Lesson Prototype Viewer',
         timeline: '2022 – 2025',
         focus: 'React · Fullstack Development',
-        description: 'Prototype viewer enabling next-generation COMET lesson experiences.',
+        description: 'Prototype viewer to develop lesson content for publishing on MetEd.',
         highlights: [
           'React JS, Redux: creation, frontend development, and backend development.',
           'Supports exploratory lesson formats for COMET teams.',
@@ -97,6 +97,94 @@ export const projectSections: readonly ProjectSection[] = [
         tools: ['React', 'Redux', 'Tailwind CSS', 'Figma', 'JIRA'],
         url: 'https://www.meted.ucar.edu/education_training',
       },
+    {
+        title: 'SciEd Interactive Learning',
+        timeline: '2020 – 2023',
+        focus: 'Angular · Web Applications',
+        description: 'Suite of interactive educational tools and simulations for K-12 science learning.',
+        highlights: [
+            'Create a Hurricane: educational interactive simulation.',
+            'Create a Snowstorm: educational snowstorm modeling simulation.',
+            'Very Simple Climate Model Calculator: climate modeling simulation tool.',
+            'Science Mural: interactive mural exploration.',
+            'Climate Sensitivity Calculator: climate analysis tool.',
+        ],
+        tools: ['Angular', 'AMCharts', 'TypeScript'],
+        url: 'https://scied.ucar.edu/interactive',
+    },
+    {
+        title: 'SciEd Drone Science Mission Mobile Game',
+        timeline: '2020 – 2021',
+        focus: 'Unity3D · Mobile Game',
+        description: 'Educational mobile game for iOS and Android platforms.',
+        highlights: [
+            'Unity3D: project management, frontend development, C# game programming, and 3D model modification/integration.',
+            'Xcode: deployment and internal distribution management for Apple TestFlight, Apple App Store, and Google Play Store.',
+        ],
+        tools: ['Unity3D', 'C#', 'Xcode', 'Android Studio'],
+    },
+    {
+        title: 'NOAA National Geodetic Survey - Webinar Series Platform',
+        timeline: '2022 – 2025',
+        focus: 'React · Fullstack Development',
+        description: 'Webinar series platform for NOAA National Geodetic Survey.',
+        highlights: [
+            'React JS, Redux, VideoJS: full-stack development and project management.',
+            'JIRA: project tracking and collaboration.',
+            'Video migration to YouTube for improved accessibility and reach.',
+        ],
+        tools: ['React', 'Redux', 'VideoJS', 'JIRA', 'YouTube'],
+    },
+    {
+        title: 'Data Visualization Project',
+        timeline: '2022',
+        focus: 'Python · React',
+        description: 'Data visualization project combining Python backend with React frontend.',
+        highlights: [
+            'Python and React JS integration for interactive data displays.',
+        ],
+        tools: ['Python', 'React'],
+    },
+    {
+        title: 'JCSDA Logo',
+        timeline: '2020',
+        focus: 'Adobe Illustrator · Branding',
+        description: 'Logo creation, revisioning, and distribution for JCSDA.',
+        highlights: [
+            'Adobe Illustrator: logo design, iteration, and final asset delivery.',
+        ],
+        tools: ['Adobe Illustrator'],
+    },
+    {
+        title: 'COSMIC-2 Logo and Patch',
+        timeline: '2019',
+        focus: 'Adobe Illustrator · Branding',
+        description: 'Logo and mission patch creation for COSMIC-2.',
+        highlights: [
+            'Adobe Illustrator: logo and patch design, revisioning, and distribution.',
+        ],
+        tools: ['Adobe Illustrator'],
+    },
+    {
+        title: 'COMET Portfolio',
+        timeline: '2018',
+        focus: 'jQuery · Web Development',
+        description: 'Static portfolio build with jQuery for COMET.',
+        highlights: [
+            'jQuery: static build, event delegation, and system integration.',
+        ],
+        tools: ['jQuery', 'JavaScript'],
+    },
+    {
+        title: 'COMET 25th Anniversary Posters and Branding',
+        timeline: '2015 – 2016',
+        focus: 'Adobe Suite · Graphic Design',
+        description: 'Anniversary branding and poster designs for COMET.',
+        highlights: [
+            'Adobe Illustrator and Photoshop: graphic design, illustration creation, revisioning, and distribution.',
+        ],
+        tools: ['Adobe Illustrator', 'Adobe Photoshop'],
+    },
     ],
   },
 ]

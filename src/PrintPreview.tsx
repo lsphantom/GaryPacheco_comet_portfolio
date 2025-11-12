@@ -2,11 +2,10 @@ import { XMarkIcon, PrinterIcon } from '@heroicons/react/24/outline'
 import { projectSections, skillMatrix } from './portfolioData'
 
 interface PrintPreviewProps {
-  isDarkMode: boolean
   onClose: () => void
 }
 
-export default function PrintPreview({ isDarkMode, onClose }: PrintPreviewProps) {
+export default function PrintPreview({ onClose }: PrintPreviewProps) {
   const handlePrint = () => {
     window.print()
   }
