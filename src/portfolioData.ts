@@ -25,7 +25,7 @@ export const projectSections: readonly ProjectSection[] = [
     items: [
         {
             title: 'MetEd Internal Tool: Data Loop Builder',
-            timeline: '2022 – 2025',
+            timeline: '2016 – 2025',
             focus: 'React · Python · Fullstack Development',
             description: 'Web application for building and managing data loops for MetEd lesson production.',
             highlights: [
