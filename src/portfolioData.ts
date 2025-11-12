@@ -23,6 +23,17 @@ export const projectSections: readonly ProjectSection[] = [
     period: '2014 – Present',
     summary: '',
     items: [
+        {
+            title: 'MetEd Internal Tool: Data Loop Builder',
+            timeline: '2022 – 2025',
+            focus: 'React · Python · Fullstack Development',
+            description: 'Web application for building and managing data loops for MetEd lesson production.',
+            highlights: [
+                'Migrated legacy C-shell scripting to modern React + Vite frontend with Python backend.',
+                'Streamlined data processing workflows for COMET lesson development teams.',
+            ],
+            tools: ['React', 'Vite', 'Python', 'C-shell'],
+        },
       {
         title: 'Climate Risk Portal',
         timeline: '2025',
